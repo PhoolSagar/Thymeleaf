@@ -1,0 +1,18 @@
+<html xmlns:th = "http://www.thymeleaf.org"> 
+	<head> 
+		<title>Student Details</title>
+	</head>
+	<body>
+	
+		
+		<h1 th:text =#{app.name}></h1>
+		<hr>
+		<p th:text =#{welcome.message}></p>
+	
+		<div th:object = ${st}>
+			<p>Id: <strong th:text=*{id}></strong></p>
+			<p>Name: <strong th:text=*{name}></strong></p>
+			<p>Course: <strong th:text=*{course}></strong></p>
+		</div>
+	</body>
+</html>

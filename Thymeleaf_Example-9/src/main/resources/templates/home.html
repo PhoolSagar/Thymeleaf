@@ -1,0 +1,10 @@
+<html xmlns:th = "http://www.thymeleaf.org"> 
+	<head> 
+		<title>Home page</title>
+	</head>
+	<body>
+	<link th:href ="@{/style.css}" rel="stylesheet"/>
+		
+		<a th:href = @{/showStudent/{id}(id=${id})}>Show Student</a>
+	</body>
+</html>
